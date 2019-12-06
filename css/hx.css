@@ -1,0 +1,362 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li,
+ol,
+a,
+p {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* 总容器 */
+.main {
+	width: 1920px;
+	height: 1080px;
+	background: url(../img/icon/ry-bg.png) no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+}
+
+.mainCont {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+/* end */
+/* 内容 */
+.mainLt {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.mainRt {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+}
+
+.mlCont,
+.mrCont {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	height: 100%;
+	padding: 0 5%;
+}
+
+.mlTop,
+.mrTop {
+	flex: 1.5;
+	position: relative;
+}
+
+.mlFoot,
+.mrFoot {
+	flex: 1;
+	position: relative;
+}
+
+.mrFoot {
+	overflow: hidden;
+}
+
+/* end */
+/* 人像 */
+.portrait {
+	width: 100%;
+	height: 90%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/* background: url(img/icon/renxiang.png) no-repeat;
+				background-size: 100% 100%; */
+	overflow: hidden;
+}
+
+.renxiangcont {
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url(../img/icon/renxiang2.png) no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.renxiangxx,
+.renxiangxxTow {
+	display: block;
+	position: absolute;
+	width: 120px;
+	height: 82%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.renxiangxx {
+	left: 20px;
+}
+
+.renxiangxxTow {
+	right: 35px;
+}
+
+.renxiangxx li,
+.renxiangxxTow li {
+	height: 45px;
+	border: 1px solid #00b2de;
+	line-height: 45px;
+	width: 100%;
+	text-align: center;
+	border-radius: 25px;
+	margin-bottom: 37px;
+	color: #00b2de;
+}
+
+.renxiangAvter {
+	background: #00b2de;
+	color: white !important;
+}
+
+.zs,
+.zx,
+.ys,
+.yx {
+	position: absolute;
+	background: url(../img/icon/zhuanjiao.png) no-repeat;
+	background-size: 100%;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.zs {
+	top: 0;
+	left: 0;
+	transform: rotate(-90deg);
+}
+
+.zx {
+	bottom: 0;
+	left: 0;
+	transform: rotate(180deg);
+}
+
+.ys {
+	top: 0;
+	right: 0;
+}
+
+.yx {
+	bottom: 0;
+	right: 0;
+	transform: rotate(90deg);
+}
+
+/* end */
+/* 标题栏 */
+.titleLan {
+	position: relative;
+	height: 42px;
+	width: 100%;
+	background: linear-gradient(to left, rgba(46, 36, 80, 0.1), 90%, #008afc);
+	border-left: 10px solid #0077AA;
+	margin: 20px 0;
+	line-height: 42px;
+	color: white;
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+.renyuanxxtitle {
+	position: relative;
+	background: linear-gradient(to left, #096bda, 50%, #008afc);
+	/* border-left: 5px solid #0ff;
+	border-right: 5px solid #0ff; */
+	border: none;
+	text-align: center;
+	width: 98%;
+}
+.ryxtLt{
+	position: absolute;
+	width: 1rem;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../img/icon/bkj.png) no-repeat;
+	background-size: 100%;
+}
+.ryxtRt{
+	position: absolute;
+	width: 1rem;
+	height: 100%;
+	top: 0;
+	right: 0;
+	transform: rotate(180deg);
+	background: url(../img/icon/bkj.png) no-repeat;
+	background-size: 100%;
+}
+
+/* end */
+/* 选项信息 */
+.mtCont {
+	width: 100%;
+	height: 90%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+/* end */
+/* 人口档案 */
+.renyuanxxCont {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 2%;
+}
+
+.ryxcTop {
+	flex: 1;
+}
+
+.ryxcFoot {
+	flex: 1.15;
+}
+
+.ryxxImg {
+	position: relative;
+	height: 100%;
+	width: 200px;
+	border: 1px dashed #fff;
+	float: left;
+}
+
+.ryxxTxt {
+	float: left;
+	width: 75%;
+	height: 100%;
+	/* background: antiquewhite; */
+	margin-left: 4%;
+}
+
+.ryxxImg::after,
+.ryxxImg::before,
+.isRyImg::after,
+.isRyImg::before {
+	position: absolute;
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-radius: 5px;
+	background: #00D09C;
+}
+
+.ryxxImg::after {
+	top: -3px;
+	left: -2px;
+}
+
+.ryxxImg::before {
+	bottom: -2px;
+	left: -2px;
+}
+
+.isRyImg::after {
+	top: -8px;
+	right: -13px;
+}
+
+.isRyImg::before {
+	bottom: -8px;
+	right: -13px;
+}
+
+.isRyImg {
+	position: absolute;
+	width: 90%;
+	height: 95%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.isRyImg img {
+	width: 100%;
+	height: 100%;
+}
+
+.ryxxTxtCont,
+.ryxxTxtContTow {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+
+.ryxxTxtCont li,
+.ryxxTxtContTow li {
+	flex: 1;
+	display: flex;
+	color: white;
+	line-height: 3rem;
+}
+
+.ryxxTxtCont li .ryxxTx:nth-child(1) {
+	flex: 1;
+}
+
+.ryxxTxtCont li .ryxxTx:nth-child(2) {
+	flex: 2;
+}
+
+.ryxxTxtContTow li .ryxxTx {
+	flex: 1;
+}
+
+/* end */
+/* 人员关系图 */
+.guanxiCanvas {
+	width: 100%;
+	height: 75%;
+	background: url(../img/icon/renyuanwg.png) no-repeat;
+	background-size: 100%;
+}
+
+/* end */
+/* 所在地地图 */
+.szdMap {
+	width: 100%;
+	background: aliceblue;
+	height: 61%;
+}
+
+.rywg {
+	margin: 0 30px;
+	color: #00d6ff;
+}
+
+.rywgtxt {
+	color: white;
+}
+
+/* end */
